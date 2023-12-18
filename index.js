@@ -22,7 +22,7 @@ let message = {
         fields: [
             {
                 name: '<:github:1157673461997641808>  GitHub Repo',
-                value: '[View (give <a:staricon:1163633093794615406>!)](https://github.com/NatroTeam/NatroMacro)'
+                value: '[View (give us a <a:staricon:1163633093794615406>!)](https://github.com/NatroTeam/NatroMacro)'
             },
             {
                 name: '<:patch_notes:1157673458172440696>  Patch Notes & Changes',
@@ -30,7 +30,7 @@ let message = {
             },
             {
                 name: '<:download:1157673459602702357>  Direct Download',
-                value: ('assets' in release && release.assets.length > 0) ? `[Download](${release.assets[0].browser_download_url})` : `[Download](${release.zipball_url})`
+                value: ('assets' in release && release.assets.length > 0) ? `[Click here to download](${release.assets[0].browser_download_url})` : `[Click here to download](${release.zipball_url})`
             }
         ],
         timestamp: release.published_at
