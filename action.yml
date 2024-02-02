@@ -2,14 +2,17 @@ name: 'Release to Discord'
 author: 'SP'
 description: 'Send any release in NatroTeam/NatroMacro directly to the Natro Macro Discord server'
 inputs:
-  webhook_url:
-    description: 'Discord Webhook URL'
+  token:
+    description: 'Discord Bot Token'
+    required: true
+  channel:
+    description: 'Announcement Channel ID for sending and publishing release info'
     required: true
   color:
     description: 'Embed color (decimal) (default: 6034540)'
     required: false
-    default: '6034540'
-  author_icon_url:
+    default: 6034540
+  author:
     description: 'Image/GIF URL to show next to "New Natro Macro Release!" (default: Hyper_Tutel)'
     required: false
     default: 'https://cdn.discordapp.com/emojis/1088609914362024047.gif?size=48&quality=lossless'
